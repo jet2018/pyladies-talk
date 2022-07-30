@@ -5,7 +5,8 @@ from MyNum.Numbers import Numbers
 class  TestingNumbers(unittest.TestCase):
 
     def test__is_even(self):
-        num = Numbers(12)
+        num = Numbers()
+        num.number = 20
         self.assertTrue(num.is_even(), False)
 
     def test__is_odd(self):
